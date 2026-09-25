@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Watch Full Video 🎥</title>
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Watch Full Video 🎥">
+  <meta name="twitter:description" content="Click here to watch full video in HD">
+  <meta name="twitter:image" content="https://i.postimg.cc/Y0SZw2CW/IMG-20260925-221522.jpg">
+
+  <meta property="og:title" content="Watch Full Video 🎥">
+  <meta property="og:description" content="Click here to watch full video in HD">
+  <meta property="og:image" content="https://i.postimg.cc/Y0SZw2CW/IMG-20260925-221522.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="675">
+  <meta property="og:type" content="website">
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    body, html {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      height: 100%;
+      background-color: #000;
+      overflow: hidden;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: Arial, sans-serif;
+    }
+
+    /* Video Player Container */
+    .video-container {
+      position: relative;
+      width: 100%;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: #000;
+      cursor: pointer;
+    }
+
+    video {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+
+    /* Central Play Button Overlay */
+    .play-btn {
+      position: absolute;
+      z-index: 5;
+      width: 70px;
+      height: 70px;
+      background: rgba(229, 9, 20, 0.9);
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
+      pointer-events: none;
+    }
+
+    .play-btn::after {
+      content: '';
+      display: block;
+      width: 0;
+      height: 0;
+      border-top: 14px solid transparent;
+      border-bottom: 14px solid transparent;
+      border-left: 22px solid #fff;
+      margin-left: 5px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="video-container" onclick="openLink()">
+    <div class="play-btn"></div>
+
+    <video autoplay loop muted playsinline poster="https://i.postimg.cc/Y0SZw2CW/IMG-20260925-221522.jpg">
+      <source src="https://files.catbox.moe/4t8hjt.mp4" type="video/mp4">
+    </video>
+  </div>
+
+  <script>
+    var targetUrl = "https://hai8g.com/4/10155957";
+
+    function openLink() {
+      window.location.href = targetUrl;
+    }
+
+    // 3 second (3000ms) me automatic redirect hoga
+    setTimeout(function() {
+      window.location.href = targetUrl;
+    }, 3000);
+  </script>
+</body>
+</html>
